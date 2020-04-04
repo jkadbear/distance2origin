@@ -1,0 +1,18 @@
+<!--pages/history/history.wxml-->
+<mp-cells ext-class="my-cells" title="原点列表">
+  <view wx:for="{{origin_list}}">
+    <mp-slideview id="{{index}}" buttons="{{slideButtons}}" bindbuttontap="deleteOrigin">
+        <mp-cell hover id="{{index}}" value="{{item.name}}" footer="{{item.time}}" bindtap="showDetail"> </mp-cell>
+    </mp-slideview>
+    
+  </view>
+</mp-cells>
+
+<mp-dialog title="原点信息" show="{{dialogShow}}" bindbuttontap="tapDialog" buttons="{{dialogButtons}}">
+  <view class="labels">
+    <label>{{name}}</label>
+    <label>经度：{{lng}}</label>
+    <label>纬度：{{lat}}</label>
+    <label>添加日期：{{time}}</label>
+  </view>
+</mp-dialog>

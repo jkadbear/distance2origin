@@ -1,0 +1,26 @@
+/**index.wxss**/
+.index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1200rpx;
+}
+
+.ll-group {
+  display: flex;
+  flex-direction: row;
+  align-items: cneter;
+  margin: 50rpx;
+}
+
+.ll {
+  font-size: small;
+  color: #aaa;
+  margin: 5rpx;
+}
+
+.dis-str {
+  font-size: 140rpx;
+  align-items: center;
+}
