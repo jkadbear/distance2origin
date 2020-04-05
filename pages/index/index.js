@@ -11,6 +11,10 @@ Page({
     dis_str: ''
   },
 
+  onShareAppMessage: function () {
+
+  },
+
   onLoad: function () {
     this.refreshOrigin()
 
