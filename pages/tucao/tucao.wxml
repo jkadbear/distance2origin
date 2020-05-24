@@ -1,0 +1,8 @@
+<!--pages/tucao/tucao.wxml-->
+<view class="tucao">
+  <view class="text">
+    本小程序源于作者做实验时的一个需求，希望便捷地看到当前位置距出发点的距离。由于没找到合适的工具，便自行开发了一个。你是否也有无法满足的小众需求？或者对“测距”小程序有不满？点击以下按钮向作者提要求。
+  </view>
+  <button class="btn-feedback" type="primary" open-type="feedback">我有意见</button>
+</view>
+<ad unit-id="adunit-3e7854c92769ed04"></ad>

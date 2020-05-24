@@ -1,12 +1,12 @@
 <!--pages/setting.wxml-->
-<view class="all-btns">
-    <view style="width:80%" class="origin-btns">
-        <button type="primary" bindtap="setMe" class="origin-btn">当前位置设为原点</button>
-        <button type="primary" bindtap="toHistory" class="origin-btn">原点历史列表</button>
-    </view>
-    <button style="width:80%" type="default" bindtap="toAbout">关于</button>
+<view class="setting">
+  <view class="btns">
+    <button type="primary" bindtap="setMe" class="btn">当前位置设为原点</button>
+    <button type="primary" bindtap="toHistory" class="btn">原点历史列表</button>
+    <button type="default" bindtap="toAdv" class="btn">{{adv_str}}</button>
+  </view>
 </view>
 
 <mp-dialog title="标注原点名为" show="{{dialogShow}}" bindbuttontap="tapDialog" buttons="{{buttons}}">
-    <input value="梦开始的地方" bindinput="setName"></input>
+  <input value="梦开始的地方" bindinput="setName"></input>
 </mp-dialog>

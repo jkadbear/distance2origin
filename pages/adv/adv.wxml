@@ -1,0 +1,7 @@
+<!--pages/adv/adv.wxml-->
+<view class="adv">
+  <view class="ans">{{ans}}</view>
+  <view class="adv-intro">微信的广告还是非常规整的，分为Banner广告、激励式广告、插屏广告、视频广告、视频贴片广告和格子广告。一页内只允许有一种广告，下面广告即是Banner广告。你可以点击一下请作者喝杯咖啡。</view>
+</view>
+
+<ad unit-id="adunit-fedca6b03bab13c8"></ad>

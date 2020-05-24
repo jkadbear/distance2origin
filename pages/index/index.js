@@ -1,5 +1,4 @@
 //index.js
-
 Page({
   data: {
     lng: 0,
@@ -8,7 +7,8 @@ Page({
     origin_lng: 0,
     origin_lat: 0,
     dis: 0,
-    dis_str: ''
+    dis_str: '',
+    dialog_btns: [{'text': 'OK'}]
   },
 
   onShareAppMessage: function () {
@@ -41,6 +41,18 @@ Page({
   setOrigin: function () {
     wx.navigateTo({
       url: '../setting/setting'
+    })
+  },
+
+  getUsage: function () {
+    this.setData({
+      dialogShow: true
+    })
+  },
+
+  tucao: function () {
+    wx.navigateTo({
+      url: '../tucao/tucao'
     })
   },
 
@@ -96,5 +108,11 @@ Page({
     )
 
     this.refreshPos(lng, lat, dis)
+  },
+
+  tapDialog: function (e) {
+    this.setData({
+      dialogShow: false
+    })
   }
 })

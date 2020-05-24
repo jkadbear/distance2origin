@@ -1,20 +1,43 @@
 <!--index.wxml-->
+<wxs module="filters" src="../../utils/utilx.wxs"></wxs>
 <view class="index">
   <view class="origin-name">
     <text>距 {{origin_name}}</text>
   </view>
   <view class="dis-str">
-    <text class="user-motto">{{dis_str}}</text>
+    {{dis_str}}
   </view>
-  <view style="margin-bottom:200rpx;" class="ll-groups">
+  <view class="ll-group">
     <view class="ll">
-      <text>当前经度：{{lng}}</text>
+      <text>当前经度：{{filters.toFix(lng, 7)}}</text>
     </view>
     <view class="ll">
-      <text>当前纬度：{{lat}}</text>
+      <text>当前纬度：{{filters.toFix(lat, 7)}}</text>
     </view>
   </view>
-  <view style="width:80%">
-    <button type="primary" bindtap="setOrigin"> 设置原点 </button>
+
+  <view class="btns-group">
+    <view class="btn1">
+      <button type="primary" bindtap="setOrigin"> 设置原点 </button>
+    </view>
+    <view class="btns-subgroup">
+      <view class="btn2">
+        <button type="default" bindtap="getUsage"> 使用说明 </button>
+      </view>
+      <view class="btn3">
+        <button type="default" bindtap="tucao"> 吐槽 </button>
+      </view>
+    </view>
   </view>
+  
 </view>
+
+<mp-dialog title="测距 V1.0.3" show="{{dialogShow}}" bindbuttontap="tapDialog" buttons="{{dialog_btns}}">
+  <text>本小程序可以实时获取当前位置并计算到原点的距离（室外较好）\n\n</text>
+  
+  <text class="bold-text">如何设置原点？\n</text>
+  <text>点击“设置原点”按钮后可以设置当前所处位置为原点（备注名可改）\n\n</text>
+  
+  <text class="bold-text">原点历史列表\n</text>
+  <text>记录曾经设置的原点，可以点击使用之前的原点（左滑可删除原点）</text>
+</mp-dialog>

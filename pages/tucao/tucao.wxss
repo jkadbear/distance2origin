@@ -1,0 +1,17 @@
+/* pages/tucao/tucao.wxss */
+.tucao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 300rpx;
+}
+
+.text {
+  margin-top: 50rpx;
+  width: 80%;
+}
+
+.btn-feedback {
+  width: 80%;
+  margin-top: 150rpx;
+}
