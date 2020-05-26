@@ -8,7 +8,7 @@ Page({
     origin_lat: 0,
     dis: 0,
     dis_str: '',
-    dialog_btns: [{'text': 'OK'}]
+    dialog_btns: [{'text': 'OK'}],
   },
 
   onShareAppMessage: function () {

@@ -25,14 +25,13 @@
         <button type="default" bindtap="getUsage"> 使用说明 </button>
       </view>
       <view class="btn3">
-        <button type="default" bindtap="tucao"> 吐槽 </button>
+        <button type="default" bindtap="tucao"> 意见反馈 </button>
       </view>
     </view>
   </view>
-  
 </view>
 
-<mp-dialog title="测距 V1.0.3" show="{{dialogShow}}" bindbuttontap="tapDialog" buttons="{{dialog_btns}}">
+<mp-dialog title="测距 V1.0.4" show="{{dialogShow}}" bindbuttontap="tapDialog" bindclose="tapDialog" buttons="{{dialog_btns}}">
   <text>本小程序可以实时获取当前位置并计算到原点的距离（室外较好）\n\n</text>
   
   <text class="bold-text">如何设置原点？\n</text>
@@ -40,4 +39,8 @@
   
   <text class="bold-text">原点历史列表\n</text>
   <text>记录曾经设置的原点，可以点击使用之前的原点（左滑可删除原点）</text>
+
+  <view class="ad">
+    <ad ad-intervals="30" unit-id="adunit-890476fd95bac2ca"></ad>
+  </view>
 </mp-dialog>

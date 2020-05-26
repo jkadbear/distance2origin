@@ -5,4 +5,4 @@
   </view>
   <button class="btn-feedback" type="primary" open-type="feedback">我有意见</button>
 </view>
-<ad unit-id="adunit-3e7854c92769ed04"></ad>
+<ad ad-intervals="30" unit-id="adunit-3e7854c92769ed04"></ad>
